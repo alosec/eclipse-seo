@@ -1,0 +1,276 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Upcoming Eclipses - Eclipse Central" description="Find upcoming solar and lunar eclipses visible from your location with dates, times, and viewing maps.">
+  <article class="page-content">
+    <header class="page-header">
+      <h1>Upcoming Eclipses</h1>
+      <p class="page-intro">Plan your eclipse viewing with our comprehensive schedule of upcoming events.</p>
+    </header>
+
+    <section class="eclipse-schedule">
+      <h2>🌞 Upcoming Solar Eclipses</h2>
+      
+      <div class="eclipse-list">
+        <div class="eclipse-event">
+          <div class="event-date">
+            <span class="month">Oct</span>
+            <span class="day">14</span>
+            <span class="year">2025</span>
+          </div>
+          <div class="event-details">
+            <h3>Annular Solar Eclipse</h3>
+            <p><strong>Path:</strong> Greenland, Iceland, Spain, Russia, Africa</p>
+            <p><strong>Duration:</strong> Up to 7 minutes 31 seconds</p>
+            <p><strong>Best viewing:</strong> Eastern Spain, Northern Africa</p>
+          </div>
+        </div>
+
+        <div class="eclipse-event">
+          <div class="event-date">
+            <span class="month">Mar</span>
+            <span class="day">29</span>
+            <span class="year">2025</span>
+          </div>
+          <div class="event-details">
+            <h3>Partial Solar Eclipse</h3>
+            <p><strong>Visible from:</strong> Eastern Canada, Greenland, Europe, Asia, Africa</p>
+            <p><strong>Maximum coverage:</strong> 82% in Russia</p>
+            <p><strong>Duration:</strong> Varies by location</p>
+          </div>
+        </div>
+
+        <div class="eclipse-event">
+          <div class="event-date">
+            <span class="month">Sep</span>
+            <span class="day">2</span>
+            <span class="year">2025</span>
+          </div>
+          <div class="event-details">
+            <h3>Partial Solar Eclipse</h3>
+            <p><strong>Visible from:</strong> New Zealand, Antarctica</p>
+            <p><strong>Maximum coverage:</strong> 77% in New Zealand</p>
+            <p><strong>Duration:</strong> Varies by location</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="eclipse-schedule">
+      <h2>🌙 Upcoming Lunar Eclipses</h2>
+      
+      <div class="eclipse-list">
+        <div class="eclipse-event">
+          <div class="event-date">
+            <span class="month">Mar</span>
+            <span class="day">14</span>
+            <span class="year">2025</span>
+          </div>
+          <div class="event-details">
+            <h3>Total Lunar Eclipse</h3>
+            <p><strong>Visible from:</strong> Pacific, Americas, Western Europe, Africa</p>
+            <p><strong>Totality duration:</strong> 1 hour 5 minutes</p>
+            <p><strong>Best viewing:</strong> Pacific Ocean region</p>
+          </div>
+        </div>
+
+        <div class="eclipse-event">
+          <div class="event-date">
+            <span class="month">Sep</span>
+            <span class="day">7</span>
+            <span class="year">2025</span>
+          </div>
+          <div class="event-details">
+            <h3>Total Lunar Eclipse</h3>
+            <p><strong>Visible from:</strong> Europe, Africa, Asia, Australia</p>
+            <p><strong>Totality duration:</strong> 1 hour 22 minutes</p>
+            <p><strong>Best viewing:</strong> Central Asia, Eastern Africa</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="viewing-tips">
+      <h2>📍 Viewing Tips</h2>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <h3>Location Planning</h3>
+          <p>Check weather forecasts and find locations with minimal light pollution for the best viewing experience.</p>
+        </div>
+        <div class="tip-card">
+          <h3>Equipment</h3>
+          <p>Bring eclipse glasses for solar eclipses, chairs for comfort, and cameras with proper filters for photography.</p>
+        </div>
+        <div class="tip-card">
+          <h3>Timing</h3>
+          <p>Arrive early to set up and test equipment. Eclipse events can happen quickly and timing is crucial.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="alert-signup">
+      <div class="alert-box">
+        <h3>🔔 Never Miss an Eclipse</h3>
+        <p>Get notified about eclipses visible from your location with our eclipse alert service.</p>
+        <a href="#" class="btn btn-primary">Set Up Alerts</a>
+      </div>
+    </section>
+  </article>
+</Layout>
+
+<style>
+  .page-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--space-8) 0;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: var(--space-16);
+  }
+
+  .page-header h1 {
+    font-size: var(--text-4xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+  }
+
+  .page-intro {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+  }
+
+  .eclipse-schedule {
+    margin-bottom: var(--space-16);
+  }
+
+  .eclipse-schedule h2 {
+    font-size: var(--text-3xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-8);
+  }
+
+  .eclipse-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .eclipse-event {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-6);
+    padding: var(--space-6);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+  }
+
+  .event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 80px;
+  }
+
+  .month {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .day {
+    font-size: var(--text-3xl);
+    font-weight: bold;
+    color: var(--color-primary);
+    line-height: 1;
+  }
+
+  .year {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+  }
+
+  .event-details h3 {
+    font-size: var(--text-xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-3);
+  }
+
+  .event-details p {
+    color: var(--color-text);
+    margin-bottom: var(--space-2);
+    line-height: 1.5;
+  }
+
+  .viewing-tips {
+    margin-bottom: var(--space-16);
+  }
+
+  .viewing-tips h2 {
+    font-size: var(--text-2xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-8);
+    text-align: center;
+  }
+
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .tip-card {
+    padding: var(--space-6);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+  }
+
+  .tip-card h3 {
+    font-size: var(--text-lg);
+    color: var(--color-primary);
+    margin-bottom: var(--space-3);
+  }
+
+  .alert-signup {
+    text-align: center;
+  }
+
+  .alert-box {
+    background: var(--color-surface);
+    padding: var(--space-8);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+  }
+
+  .alert-box h3 {
+    font-size: var(--text-2xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+  }
+
+  .alert-box p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-6);
+  }
+
+  .btn {
+    display: inline-block;
+    padding: var(--space-3) var(--space-6);
+    background: var(--color-primary);
+    color: var(--color-surface);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: var(--transition);
+  }
+
+  .btn:hover {
+    background: var(--color-secondary);
+  }
+</style>

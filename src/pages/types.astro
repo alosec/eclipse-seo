@@ -1,0 +1,161 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Types of Eclipses - Eclipse Central" description="Learn about the different types of eclipses: solar, lunar, partial, and total eclipses.">
+  <article class="page-content">
+    <header class="page-header">
+      <h1>Types of Eclipses</h1>
+      <p class="page-intro">Understanding the different types of eclipses and what makes each one special.</p>
+    </header>
+
+    <section class="eclipse-type">
+      <h2>🌞 Solar Eclipses</h2>
+      <p>Solar eclipses occur when the Moon passes between Earth and the Sun, casting a shadow on Earth.</p>
+      
+      <div class="subtypes">
+        <div class="subtype-card">
+          <h3>Total Solar Eclipse</h3>
+          <p>The Moon completely covers the Sun's disk, revealing the Sun's corona. Day turns to night for a few minutes.</p>
+        </div>
+        <div class="subtype-card">
+          <h3>Partial Solar Eclipse</h3>
+          <p>The Moon only partially covers the Sun, creating a crescent-shaped Sun visible from Earth.</p>
+        </div>
+        <div class="subtype-card">
+          <h3>Annular Solar Eclipse</h3>
+          <p>The Moon appears smaller than the Sun, creating a "ring of fire" effect around the Moon's silhouette.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="eclipse-type">
+      <h2>🌕 Lunar Eclipses</h2>
+      <p>Lunar eclipses happen when Earth passes between the Sun and Moon, casting Earth's shadow on the Moon.</p>
+      
+      <div class="subtypes">
+        <div class="subtype-card">
+          <h3>Total Lunar Eclipse</h3>
+          <p>The Moon passes completely through Earth's shadow, often appearing red or copper-colored.</p>
+        </div>
+        <div class="subtype-card">
+          <h3>Partial Lunar Eclipse</h3>
+          <p>Only part of the Moon passes through Earth's shadow, creating a partial darkening effect.</p>
+        </div>
+        <div class="subtype-card">
+          <h3>Penumbral Lunar Eclipse</h3>
+          <p>The Moon passes through Earth's outer shadow, causing a subtle dimming that's harder to notice.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="frequency">
+      <h2>📊 Eclipse Frequency</h2>
+      <div class="frequency-grid">
+        <div class="frequency-item">
+          <h4>Solar Eclipses</h4>
+          <p>2-5 per year globally<br>~375 years between total eclipses at same location</p>
+        </div>
+        <div class="frequency-item">
+          <h4>Lunar Eclipses</h4>
+          <p>2-3 per year globally<br>Visible from entire night side of Earth</p>
+        </div>
+      </div>
+    </section>
+  </article>
+</Layout>
+
+<style>
+  .page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space-8) 0;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: var(--space-16);
+  }
+
+  .page-header h1 {
+    font-size: var(--text-4xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+  }
+
+  .page-intro {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+  }
+
+  .eclipse-type {
+    margin-bottom: var(--space-16);
+  }
+
+  .eclipse-type h2 {
+    font-size: var(--text-3xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-6);
+  }
+
+  .eclipse-type > p {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-8);
+  }
+
+  .subtypes {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .subtype-card {
+    padding: var(--space-6);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+  }
+
+  .subtype-card h3 {
+    font-size: var(--text-xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-3);
+  }
+
+  .frequency {
+    background: var(--color-surface);
+    padding: var(--space-8);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+  }
+
+  .frequency h2 {
+    font-size: var(--text-2xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-6);
+    text-align: center;
+  }
+
+  .frequency-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .frequency-item {
+    text-align: center;
+    padding: var(--space-4);
+  }
+
+  .frequency-item h4 {
+    font-size: var(--text-lg);
+    color: var(--color-primary);
+    margin-bottom: var(--space-3);
+  }
+
+  @media (min-width: 768px) {
+    .subtypes {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+</style>

@@ -1,0 +1,213 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Eclipse Safety Guide - Eclipse Central" description="Essential safety information for viewing solar and lunar eclipses safely without eye damage.">
+  <article class="page-content">
+    <header class="page-header">
+      <h1>Eclipse Safety Guide</h1>
+      <p class="page-intro">Protect your vision while experiencing the wonder of eclipses.</p>
+    </header>
+
+    <section class="warning-section">
+      <div class="warning-box">
+        <h2>⚠️ Critical Warning</h2>
+        <p><strong>NEVER look directly at the Sun during a solar eclipse without proper protection.</strong> Even during an eclipse, the Sun's rays can cause permanent eye damage or blindness.</p>
+      </div>
+    </section>
+
+    <section class="safety-methods">
+      <h2>Safe Viewing Methods</h2>
+      
+      <div class="method-grid">
+        <div class="method-card safe">
+          <h3>✅ Eclipse Glasses</h3>
+          <p>ISO 12312-2 certified eclipse glasses are the safest direct viewing method. Check for certification marks and inspect for damage before use.</p>
+        </div>
+        
+        <div class="method-card safe">
+          <h3>✅ Welding Filters</h3>
+          <p>Welding glass with shade 14 or darker provides safe direct viewing. Lighter shades are NOT safe.</p>
+        </div>
+        
+        <div class="method-card safe">
+          <h3>✅ Pinhole Projection</h3>
+          <p>Create a simple pinhole projector using cardboard or use the shadow of leaves to safely observe the eclipse indirectly.</p>
+        </div>
+        
+        <div class="method-card unsafe">
+          <h3>❌ Sunglasses</h3>
+          <p>Regular sunglasses, even very dark ones, are NOT safe for looking at the Sun during an eclipse.</p>
+        </div>
+        
+        <div class="method-card unsafe">
+          <h3>❌ Smoked Glass</h3>
+          <p>Smoked glass, exposed film, or CD/DVDs do NOT provide adequate protection.</p>
+        </div>
+        
+        <div class="method-card unsafe">
+          <h3>❌ Camera/Phone</h3>
+          <p>Looking at the eclipse through a camera, telescope, or phone camera can concentrate harmful rays.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="totality-exception">
+      <h2>🌑 During Totality</h2>
+      <p>Only during the brief moment of totality in a total solar eclipse can you safely look directly at the eclipse without protection. You must put protection back on immediately when totality ends.</p>
+      
+      <div class="totality-signs">
+        <h3>Signs Totality is Ending:</h3>
+        <ul>
+          <li>First bright flash of sunlight (diamond ring effect)</li>
+          <li>Temperature starts to rise</li>
+          <li>Shadow bands may appear again</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="lunar-safety">
+      <h2>🌙 Lunar Eclipse Safety</h2>
+      <p>Lunar eclipses are completely safe to view with the naked eye, binoculars, or telescopes. No special protection is needed since you're looking at the Moon, not the Sun.</p>
+    </section>
+
+    <section class="emergency">
+      <h2>🚨 If You Accidentally Look</h2>
+      <p>If you accidentally glance at the Sun during an eclipse:</p>
+      <ul>
+        <li>Don't panic - brief accidental glances usually don't cause permanent damage</li>
+        <li>Seek medical attention if you experience eye pain, vision changes, or seeing spots</li>
+        <li>Contact an eye doctor immediately for professional evaluation</li>
+      </ul>
+    </section>
+  </article>
+</Layout>
+
+<style>
+  .page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space-8) 0;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: var(--space-12);
+  }
+
+  .page-header h1 {
+    font-size: var(--text-4xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+  }
+
+  .page-intro {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+  }
+
+  .warning-section {
+    margin-bottom: var(--space-12);
+  }
+
+  .warning-box {
+    background: #FEF2F2;
+    border: 2px solid #DC2626;
+    border-radius: var(--border-radius);
+    padding: var(--space-6);
+    color: #DC2626;
+  }
+
+  .warning-box h2 {
+    margin-bottom: var(--space-3);
+  }
+
+  .safety-methods {
+    margin-bottom: var(--space-16);
+  }
+
+  .safety-methods h2 {
+    font-size: var(--text-3xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-8);
+  }
+
+  .method-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .method-card {
+    padding: var(--space-6);
+    border-radius: var(--border-radius);
+    border: 2px solid;
+  }
+
+  .method-card.safe {
+    background: #F0FDF4;
+    border-color: #16A34A;
+    color: #15803D;
+  }
+
+  .method-card.unsafe {
+    background: #FEF2F2;
+    border-color: #DC2626;
+    color: #DC2626;
+  }
+
+  .method-card h3 {
+    margin-bottom: var(--space-3);
+    font-size: var(--text-lg);
+  }
+
+  .totality-exception {
+    background: var(--color-surface);
+    padding: var(--space-8);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    margin-bottom: var(--space-16);
+  }
+
+  .totality-exception h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+  }
+
+  .totality-signs {
+    margin-top: var(--space-6);
+    padding: var(--space-4);
+    background: var(--color-background);
+    border-radius: var(--border-radius);
+  }
+
+  .totality-signs h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-3);
+  }
+
+  .totality-signs ul {
+    padding-left: var(--space-6);
+  }
+
+  .lunar-safety,
+  .emergency {
+    margin-bottom: var(--space-12);
+  }
+
+  .lunar-safety h2,
+  .emergency h2 {
+    font-size: var(--text-2xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+  }
+
+  .emergency ul {
+    margin-top: var(--space-4);
+    padding-left: var(--space-6);
+  }
+
+  .emergency li {
+    margin-bottom: var(--space-2);
+  }
+</style>

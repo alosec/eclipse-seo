@@ -1,0 +1,285 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Eclipse Gallery - Eclipse Central" description="Stunning photography and images of solar and lunar eclipses from around the world.">
+  <article class="page-content">
+    <header class="page-header">
+      <h1>Eclipse Gallery</h1>
+      <p class="page-intro">Witness the beauty of eclipses through stunning photography and imagery.</p>
+    </header>
+
+    <section class="gallery-grid">
+      <div class="gallery-item">
+        <div class="image-placeholder solar-total">
+          <span class="image-label">Total Solar Eclipse</span>
+        </div>
+        <div class="image-info">
+          <h3>Corona Revelation</h3>
+          <p>The Sun's corona becomes visible during totality, creating ethereal streams of light around the Moon's silhouette.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="image-placeholder lunar-red">
+          <span class="image-label">Total Lunar Eclipse</span>
+        </div>
+        <div class="image-info">
+          <h3>Blood Moon</h3>
+          <p>Earth's atmosphere filters sunlight, casting a red glow on the Moon during a total lunar eclipse.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="image-placeholder diamond-ring">
+          <span class="image-label">Diamond Ring Effect</span>
+        </div>
+        <div class="image-info">
+          <h3>Diamond Ring</h3>
+          <p>The last ray of sunlight creates a brilliant "diamond ring" just before and after totality.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="image-placeholder annular">
+          <span class="image-label">Annular Eclipse</span>
+        </div>
+        <div class="image-info">
+          <h3>Ring of Fire</h3>
+          <p>When the Moon appears smaller than the Sun, it creates a brilliant ring of sunlight around its edges.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="image-placeholder shadow-bands">
+          <span class="image-label">Shadow Bands</span>
+        </div>
+        <div class="image-info">
+          <h3>Shadow Bands</h3>
+          <p>Mysterious wavy shadows that dance across the ground just before and after totality.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="image-placeholder baily-beads">
+          <span class="image-label">Baily's Beads</span>
+        </div>
+        <div class="image-info">
+          <h3>Baily's Beads</h3>
+          <p>Sunlight filtering through lunar mountains creates a string of bright points around the Moon's edge.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="photography-tips">
+      <h2>📸 Eclipse Photography Tips</h2>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <h3>Solar Filter Required</h3>
+          <p>Always use a proper solar filter on your camera lens when photographing solar eclipses to protect your equipment and eyes.</p>
+        </div>
+        <div class="tip-card">
+          <h3>Practice Beforehand</h3>
+          <p>Test your camera settings and setup before the eclipse. You won't have time to figure things out during the event.</p>
+        </div>
+        <div class="tip-card">
+          <h3>Manual Settings</h3>
+          <p>Use manual focus and exposure. Auto settings won't work properly during the dramatic lighting changes of an eclipse.</p>
+        </div>
+        <div class="tip-card">
+          <h3>Multiple Exposures</h3>
+          <p>Take multiple shots with different exposures to capture both the bright corona and darker details.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="submission-info">
+      <div class="submission-box">
+        <h3>📷 Share Your Eclipse Photos</h3>
+        <p>Captured an amazing eclipse photo? We'd love to feature it in our gallery!</p>
+        <a href="#" class="btn btn-primary">Submit Photos</a>
+      </div>
+    </section>
+  </article>
+</Layout>
+
+<style>
+  .page-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--space-8) 0;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: var(--space-16);
+  }
+
+  .page-header h1 {
+    font-size: var(--text-4xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+  }
+
+  .page-intro {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-8);
+    margin-bottom: var(--space-24);
+  }
+
+  .gallery-item {
+    background: var(--color-surface);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    transition: var(--transition);
+  }
+
+  .gallery-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  }
+
+  .image-placeholder {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .solar-total {
+    background: radial-gradient(circle, #000000 30%, #FFD700 31%, #FFA500 35%, #000000 36%);
+  }
+
+  .lunar-red {
+    background: radial-gradient(circle, #8B0000 40%, #DC143C 60%, #000000 80%);
+  }
+
+  .diamond-ring {
+    background: radial-gradient(ellipse, #FFFFFF 10%, #FFD700 15%, #000000 20%);
+  }
+
+  .annular {
+    background: radial-gradient(circle, #000000 25%, #FFD700 26%, #FFA500 28%, #FFD700 30%, #000000 31%);
+  }
+
+  .shadow-bands {
+    background: repeating-linear-gradient(
+      45deg,
+      #2C2C2C,
+      #2C2C2C 10px,
+      #1A1A1A 10px,
+      #1A1A1A 20px
+    );
+  }
+
+  .baily-beads {
+    background: radial-gradient(circle, #000000 35%, transparent 36%), 
+                radial-gradient(circle at 20% 30%, #FFD700 2%, transparent 3%),
+                radial-gradient(circle at 80% 70%, #FFD700 2%, transparent 3%),
+                radial-gradient(circle at 60% 20%, #FFD700 1.5%, transparent 2%),
+                #000000;
+  }
+
+  .image-label {
+    position: absolute;
+    bottom: var(--space-2);
+    left: var(--space-3);
+    font-size: var(--text-sm);
+    background: rgba(0, 0, 0, 0.7);
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--space-1);
+  }
+
+  .image-info {
+    padding: var(--space-6);
+  }
+
+  .image-info h3 {
+    font-size: var(--text-xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-3);
+  }
+
+  .image-info p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+  }
+
+  .photography-tips {
+    margin-bottom: var(--space-16);
+  }
+
+  .photography-tips h2 {
+    font-size: var(--text-2xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-8);
+    text-align: center;
+  }
+
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .tip-card {
+    padding: var(--space-6);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+  }
+
+  .tip-card h3 {
+    font-size: var(--text-lg);
+    color: var(--color-primary);
+    margin-bottom: var(--space-3);
+  }
+
+  .submission-info {
+    text-align: center;
+  }
+
+  .submission-box {
+    background: var(--color-surface);
+    padding: var(--space-8);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+  }
+
+  .submission-box h3 {
+    font-size: var(--text-2xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+  }
+
+  .submission-box p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-6);
+  }
+
+  .btn {
+    display: inline-block;
+    padding: var(--space-3) var(--space-6);
+    background: var(--color-primary);
+    color: var(--color-surface);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: var(--transition);
+  }
+
+  .btn:hover {
+    background: var(--color-secondary);
+  }
+</style>
