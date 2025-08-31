@@ -1,4 +1,7 @@
 ---
+import Header from '../components/Header.astro';
+import MobileSidebar from '../components/MobileSidebar.astro';
+
 export interface Props {
   title: string;
   description?: string;
@@ -8,7 +11,7 @@ const { title, description = "Learn about eclipses, their types, and when to see
 ---
 
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="purple">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -18,33 +21,8 @@ const { title, description = "Learn about eclipses, their types, and when to see
     <title>{title}</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header-content">
-        <div class="logo">
-          <a href="/">🌑 Eclipse</a>
-        </div>
-        <nav class="nav desktop-nav">
-          <a href="/">Home</a>
-          <a href="/types">Types</a>
-          <a href="/safety">Safety</a>
-          <a href="/upcoming">Upcoming</a>
-          <a href="/gallery">Gallery</a>
-          <a href="/science">Science</a>
-        </nav>
-        <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
-      </div>
-    </header>
-
-    <div class="mobile-sidebar" id="mobile-sidebar">
-      <nav class="mobile-nav">
-        <a href="/">Home</a>
-        <a href="/types">Types</a>
-        <a href="/safety">Safety</a>
-        <a href="/upcoming">Upcoming</a>
-        <a href="/gallery">Gallery</a>
-        <a href="/science">Science</a>
-      </nav>
-    </div>
+    <Header />
+    <MobileSidebar />
 
     <main class="main">
       <div class="content">
@@ -55,6 +33,29 @@ const { title, description = "Learn about eclipses, their types, and when to see
     <script>
       const mobileMenuBtn = document.getElementById('mobile-menu-btn');
       const mobileSidebar = document.getElementById('mobile-sidebar');
+      const themeToggleBtn = document.getElementById('theme-toggle-btn');
+      const mobileThemeToggleBtn = document.getElementById('mobile-theme-toggle');
+      
+      const themes = ['purple', 'light', 'dark'];
+      const themeEmojis = { light: '🌞', dark: '🌚', purple: '🌑' };
+      
+      let currentThemeIndex = 0;
+      
+      function switchTheme() {
+        currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+        const newTheme = themes[currentThemeIndex];
+        document.documentElement.setAttribute('data-theme', newTheme);
+        const emoji = themeEmojis[newTheme];
+        if (themeToggleBtn) {
+          themeToggleBtn.textContent = emoji;
+        }
+        if (mobileThemeToggleBtn) {
+          mobileThemeToggleBtn.textContent = emoji;
+        }
+      }
+      
+      themeToggleBtn?.addEventListener('click', switchTheme);
+      mobileThemeToggleBtn?.addEventListener('click', switchTheme);
       
       mobileMenuBtn?.addEventListener('click', () => {
         mobileSidebar?.classList.toggle('open');
@@ -167,71 +168,6 @@ const { title, description = "Learn about eclipses, their types, and when to see
     justify-content: space-between;
   }
 
-  .logo a {
-    font-size: var(--text-xl);
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--color-primary);
-  }
-
-  .desktop-nav {
-    display: none;
-    gap: var(--space-6);
-  }
-
-  .desktop-nav a {
-    text-decoration: none;
-    color: var(--color-text-secondary);
-    font-weight: 500;
-    transition: var(--transition);
-  }
-
-  .desktop-nav a:hover {
-    color: var(--color-primary);
-  }
-
-  .mobile-menu-btn {
-    display: block;
-    background: none;
-    border: none;
-    font-size: var(--text-xl);
-    color: var(--color-text);
-    cursor: pointer;
-    padding: var(--space-2);
-  }
-
-  .mobile-sidebar {
-    position: fixed;
-    top: var(--header-height);
-    left: 0;
-    right: 0;
-    height: 50vh;
-    background: var(--color-surface);
-    border-bottom: 1px solid var(--color-border);
-    transform: translateY(-100%);
-    transition: transform 0.3s ease;
-    z-index: 99;
-  }
-
-  .mobile-sidebar.open {
-    transform: translateY(0);
-  }
-
-  .mobile-nav {
-    padding: var(--space-4);
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-4);
-  }
-
-  .mobile-nav a {
-    text-decoration: none;
-    color: var(--color-text);
-    font-size: var(--text-lg);
-    font-weight: 500;
-    padding: var(--space-2) 0;
-    border-bottom: 1px solid var(--color-border);
-  }
 
   .main {
     flex: 1;
@@ -244,17 +180,4 @@ const { title, description = "Learn about eclipses, their types, and when to see
     padding: 0 var(--space-4);
   }
 
-  @media (min-width: 768px) {
-    .desktop-nav {
-      display: flex;
-    }
-
-    .mobile-menu-btn {
-      display: none;
-    }
-
-    .mobile-sidebar {
-      display: none;
-    }
-  }
 </style>

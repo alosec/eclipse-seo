@@ -1,0 +1,38 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+---
+
+<nav class="nav desktop-nav">
+  <a href="/">Home</a>
+  <a href="/types">Types</a>
+  <a href="/safety">Safety</a>
+  <a href="/upcoming">Upcoming</a>
+  <a href="/gallery">Gallery</a>
+  <a href="/science">Science</a>
+  <ThemeToggle id="theme-toggle-btn" />
+</nav>
+
+<style>
+  .desktop-nav {
+    display: none;
+    gap: var(--space-6);
+    align-items: center;
+  }
+
+  .desktop-nav a {
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    transition: var(--transition);
+  }
+
+  .desktop-nav a:hover {
+    color: var(--color-primary);
+  }
+
+  @media (min-width: 768px) {
+    .desktop-nav {
+      display: flex;
+    }
+  }
+</style>
