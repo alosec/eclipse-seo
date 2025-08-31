@@ -1,0 +1,288 @@
+{
+  "metadata": {
+    "created": "2025-08-31",
+    "description": "Curated collection of astronomy and solar eclipse photography links from Unsplash, NASA, ESA, Pixabay, and other sources",
+    "license": "Most Unsplash images are free for commercial use with no attribution required. NASA and ESA images generally public domain. Check individual source licensing."
+  },
+  "solar_eclipse": {
+    "unsplash_collections": [
+      {
+        "name": "Solar Eclipse Pictures",
+        "url": "https://unsplash.com/images/nature/solar-eclipse",
+        "description": "Main solar eclipse collection on Unsplash"
+      },
+      {
+        "name": "Total Solar Eclipse",
+        "url": "https://unsplash.com/s/photos/total-solar-eclipse",
+        "description": "Dedicated total solar eclipse photography"
+      },
+      {
+        "name": "Eclipse Collection",
+        "url": "https://unsplash.com/s/photos/eclipse",
+        "description": "General eclipse photography including solar eclipses"
+      },
+      {
+        "name": "Solar Eclipse 2017 Collection",
+        "url": "https://unsplash.com/collections/1108634/",
+        "description": "48 curated photos from the 2017 solar eclipse"
+      },
+      {
+        "name": "Solar Eclipse Wallpapers",
+        "url": "https://unsplash.com/collections/mqgMJzgvG_U/solar-eclipse",
+        "description": "45 high-resolution solar eclipse wallpapers"
+      }
+    ],
+    "direct_images": [
+      {
+        "filename": "planets-dark-sky-cosmic-arrangement.jpg",
+        "url": "https://unsplash.com/photos/a-group-of-planets-in-the-dark-sky-To-YMqXblec/download",
+        "description": "Cosmic planetary arrangement against night backdrop"
+      },
+      {
+        "filename": "black-white-eclipse-closeup.jpg",
+        "url": "https://plus.unsplash.com/premium_photo-1679350313312-5795098253fd",
+        "description": "Black and white eclipse close-up",
+        "note": "Premium Unsplash+ image"
+      },
+      {
+        "filename": "moon-eclipse-phase.jpg",
+        "url": "https://images.unsplash.com/photo-1529788295308-1eace6f67388",
+        "description": "Moon eclipse photography"
+      },
+      {
+        "filename": "lunar-eclipse-night.jpg",
+        "url": "https://images.unsplash.com/photo-1503584815950-223185a0e8fd",
+        "description": "Lunar eclipse night photography"
+      },
+      {
+        "filename": "solar-eclipse-digital-wallpaper.jpg",
+        "url": "https://images.unsplash.com/photo-1506747958701-808cb3805b0f",
+        "description": "Solar eclipse digital wallpaper"
+      }
+    ]
+  },
+  "astronomy": {
+    "unsplash_collections": [
+      {
+        "name": "Milky Way Photography",
+        "url": "https://unsplash.com/s/photos/milky-way",
+        "description": "500+ best Milky Way pictures in HD"
+      },
+      {
+        "name": "Milky Way Galaxy",
+        "url": "https://unsplash.com/s/photos/milky-way-galaxy",
+        "description": "500+ Milky Way galaxy pictures in HD"
+      },
+      {
+        "name": "Nebula Photography",
+        "url": "https://unsplash.com/s/photos/nebula",
+        "description": "100+ nebula pictures in 4K"
+      },
+      {
+        "name": "Galaxy Photography",
+        "url": "https://unsplash.com/s/photos/Galaxy",
+        "description": "200+ galaxy pictures in 4K"
+      },
+      {
+        "name": "Astrophotography",
+        "url": "https://unsplash.com/s/photos/astrophotography",
+        "description": "1500+ astrophotography pictures"
+      },
+      {
+        "name": "Astronomy General",
+        "url": "https://unsplash.com/s/photos/astronomy",
+        "description": "100+ best astronomy pictures"
+      },
+      {
+        "name": "Milky Way Panorama",
+        "url": "https://unsplash.com/s/photos/milky-way-panorama",
+        "description": "Panoramic Milky Way photography"
+      }
+    ],
+    "direct_images": [
+      {
+        "filename": "winter-meteor-shower-carpathians-ukraine.jpg",
+        "url": "https://plus.unsplash.com/premium_photo-1661277679965-9db1104e890f/download",
+        "description": "Winter meteor shower over snow-capped Carpathian mountains, Ukraine",
+        "note": "Premium Unsplash+ image"
+      },
+      {
+        "filename": "green-tree-water-starry-sky.jpg",
+        "url": "https://images.unsplash.com/photo-1502318217862-aa4e294ba657/download",
+        "description": "Green leafed tree on body of water under starry sky"
+      },
+      {
+        "filename": "milky-way-over-mountains.jpg",
+        "url": "https://images.unsplash.com/photo-1515705576963-95cad62945b6/download",
+        "description": "Milky way galaxy over mountain landscape"
+      },
+      {
+        "filename": "milky-way-over-water.jpg",
+        "url": "https://images.unsplash.com/photo-1533683083439-1a776a5653cb/download",
+        "description": "Milky Way galaxy reflected over body of water"
+      },
+      {
+        "filename": "blue-white-starry-night-sky.jpg",
+        "url": "https://images.unsplash.com/photo-1580432551600-8c9768628a9e/download",
+        "description": "Blue and white starry night sky"
+      },
+      {
+        "filename": "silhouette-starry-landscape.jpg",
+        "url": "https://unsplash.com/photos/oMpAz-DN-9I/download",
+        "description": "Human silhouette against expansive starry landscape"
+      },
+      {
+        "filename": "star-cluster-illustration.jpg",
+        "url": "https://unsplash.com/photos/f7YQo-eYHdM/download",
+        "description": "Artistic rendering of interconnected stellar formations"
+      },
+      {
+        "filename": "mountain-nightscape-celestial.jpg",
+        "url": "https://unsplash.com/photos/ln5drpv_ImI/download",
+        "description": "Mountain range silhouetted beneath celestial canopy"
+      },
+      {
+        "filename": "earth-from-space-night.jpg",
+        "url": "https://unsplash.com/photos/fUijZUIG8gk/download",
+        "description": "Orbital view of Earth illuminated during nocturnal hours"
+      }
+    ]
+  },
+  "nasa_sources": {
+    "official_collections": [
+      {
+        "name": "NASA Eclipse Gallery",
+        "url": "https://science.nasa.gov/gallery/eclipses/",
+        "description": "Official NASA eclipses gallery with awe-inspiring celestial events"
+      },
+      {
+        "name": "NASA Scientific Visualization Studio",
+        "url": "https://svs.gsfc.nasa.gov//12704/",
+        "description": "High-resolution NASA eclipse imagery with detailed technical information"
+      },
+      {
+        "name": "NASA Solar System Exploration Gallery",
+        "url": "https://solarsystem.nasa.gov/eclipses/resources/gallery/",
+        "description": "Eclipse resources gallery - contact abbey.a.interrante@nasa.gov for high-quality images"
+      },
+      {
+        "name": "NASA 2017 Eclipse Archive",
+        "url": "https://eclipse2017.nasa.gov/downloadables",
+        "description": "Comprehensive 2017 total solar eclipse resources and downloadable content"
+      },
+      {
+        "name": "Solar Eclipse Across America",
+        "url": "https://eclipse.aas.org/resources/images-videos",
+        "description": "Royalty-free eclipse images and videos"
+      },
+      {
+        "name": "NASA Images Portal",
+        "url": "https://www.nasa.gov/images/",
+        "description": "Over 3,000 photos from NASA's history and image library"
+      }
+    ],
+    "featured_content": [
+      {
+        "name": "MODIS Terra Satellite Eclipse Shadow",
+        "description": "Eclipse shadow mosaics captured by MODIS sensor from Terra satellite"
+      },
+      {
+        "name": "ISS Eclipse Transit",
+        "description": "International Space Station transit images during partial eclipse phases"
+      },
+      {
+        "name": "Madras Oregon Eclipse Composite",
+        "description": "Composite eclipse images combining short, medium, and long exposures to capture full corona brightness range"
+      }
+    ]
+  },
+  "esa_hubble_sources": {
+    "official_collections": [
+      {
+        "name": "ESA/Hubble Images",
+        "url": "https://esahubble.org/images/",
+        "description": "Main ESA/Hubble image gallery with categories including galaxies, nebulae, exoplanets"
+      },
+      {
+        "name": "ESA/Hubble Top 100",
+        "url": "https://esahubble.org/images/archive/top100/",
+        "description": "Top 100 iconic Hubble images including Pillars of Creation, Lagoon Nebula, Hubble Ultra Deep Field"
+      },
+      {
+        "name": "ESA/Hubble Wallpapers",
+        "url": "https://esahubble.org/images/archive/wallpapers/",
+        "description": "High-resolution Hubble wallpaper collection"
+      },
+      {
+        "name": "NASA Hubble Science Portal",
+        "url": "https://science.nasa.gov/mission/hubble/multimedia/hubble-images/",
+        "description": "NASA's official Hubble astronomical and mission images"
+      },
+      {
+        "name": "ESA Multimedia Hubble Archive",
+        "url": "https://www.esa.int/ESA_Multimedia/Missions/Hubble_Space_Telescope/(result_type)/images",
+        "description": "Over 1050 professional Hubble images from ESA's multimedia library"
+      },
+      {
+        "name": "ESA/Webb Images",
+        "url": "https://esawebb.org/images/",
+        "description": "James Webb Space Telescope images from ESA"
+      }
+    ],
+    "professional_collections": [
+      {
+        "name": "Hubble Image Collection v3.0",
+        "url": "https://esahubble.org/products/media/hst_media_0017/",
+        "description": "130 of the best Hubble images in both JPEG and TIFF formats at optimal resolution"
+      }
+    ],
+    "featured_content": [
+      {
+        "name": "Hubble 35th Anniversary Images",
+        "description": "New compelling images covering Mars, stellar birth and death, neighboring galaxies"
+      },
+      {
+        "name": "Eagle Nebula Updated Processing",
+        "description": "New view of Eagle Nebula using updated data processing techniques"
+      },
+      {
+        "name": "Hubble Ultra Deep Field",
+        "description": "Nearly 10,000 galaxies in one of the most famous deep space images"
+      }
+    ]
+  },
+  "stock_photo_sources": {
+    "pixabay": {
+      "space_collection": {
+        "url": "https://pixabay.com/images/search/space/",
+        "description": "40,000+ free space images in HD to 4K quality, royalty-free with no attribution required"
+      },
+      "astronomy_collection": {
+        "url": "https://pixabay.com/images/search/astronomy/",
+        "description": "9,000+ free astronomy images, royalty-free"
+      },
+      "astrophotography_collection": {
+        "url": "https://pixabay.com/images/search/astrophotography/",
+        "description": "500+ free astrophotography images, high quality and royalty-free"
+      },
+      "eclipse_collection": {
+        "url": "https://pixabay.com/images/search/eclipse/",
+        "description": "600+ best HD eclipse photos, free for commercial use"
+      }
+    },
+    "pexels": {
+      "space_and_astronomy": {
+        "url": "https://www.pexels.com/search/space%20and%20astronomy/",
+        "description": "Space and astronomy stock photos, free HD images"
+      },
+      "astronomy": {
+        "url": "https://www.pexels.com/search/astronomy/",
+        "description": "Free astronomy photos with high-resolution downloads"
+      },
+      "space": {
+        "url": "https://www.pexels.com/search/space/",
+        "description": "200,000+ free space photos with thousands of new images added daily"
+      }
+    }
+  }
+}
